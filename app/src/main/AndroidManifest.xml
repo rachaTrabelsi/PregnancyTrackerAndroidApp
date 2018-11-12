@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.esprit.pregnancytracker">
+
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="21"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="26.1.0"
+        tools:replace="android:value"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDa4S1eGp74KsMHAMWRyg6PhzleARYtk0w"/>
+
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".main.ShowProfile">
+        </activity>
+        <activity android:name=".main.DetailsInformationActivity">
+        </activity>
+        <activity android:name=".main.MapActivity">
+        </activity>
+        <activity android:name=".main.RegisterActivity">
+        </activity>
+        <activity android:name=".main.EditProfile">
+        </activity>
+        <activity android:name=".main.DoctorProfil">
+        </activity>
+        <activity android:name=".main.FragmentActivity"/>
+        <activity android:name=".main.LifeStyleActivity"/>
+        <activity android:name=".main.ShowDetailsRendezVous">
+        </activity>
+
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".main.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <action android:name="android.media.action.DISPLAY_NOTIFICATION"/>
+
+            <category android:name="android.intent.category.DEFAULT"/>
+        </receiver>
+
+        <activity android:name=".main.LoginActivity">
+        </activity>
+        <activity android:name=".main.HomeActivity">
+        </activity>
+        <activity android:name=".main.sportwatersleepActivity">
+        </activity>
+        <activity android:name=".main.InformationActivity">
+        </activity>
+        <activity android:name=".main.ImcActivity">
+        </activity>
+        <activity android:name=".main.NotesContainerActivity">
+        </activity>
+        <activity android:name=".main.SelfBidouActivity">
+        </activity>
+        <activity android:name=".main.LoginAsdoctor">
+        </activity>
+        <activity android:name=".main.MoreActivity">
+        </activity>
+        <activity
+            android:name=".main.SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.MessagingContainerActivity">
+        </activity>
+        <activity
+            android:name=".main.MainDoctorActivity"
+            android:label="@string/title_activity_main_doctor"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".main.DoctorMessagingContainer"
+            android:label="@string/title_activity_doctor_messaging_container"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>

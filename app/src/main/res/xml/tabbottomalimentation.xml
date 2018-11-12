@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_alimentationtoeat"
+        title="To eat"
+        fontsize = '255'
+        barColorWhenSelected="#E0ECF8"/>
+    <tab
+        id="@+id/tab_alimentationnottoeat"
+        title="Not to eat"
+        fontsize = '25'
+        barColorWhenSelected="#A9BCF5"/>
+</tabs>

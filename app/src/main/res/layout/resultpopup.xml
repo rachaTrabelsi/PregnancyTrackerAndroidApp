@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+  >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textStyle="bold"
+        android:textColor="#368581"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/titleResult"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/alcoholp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/imgResult"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgResult"
+        android:layout_marginLeft="10dp"
+        android:lineSpacingMultiplier="1.5"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:id="@+id/descriptionResult"
+        android:text="Description text Description text Description text Description text"/>
+
+
+
+</RelativeLayout>

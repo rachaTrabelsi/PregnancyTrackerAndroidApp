@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:fillViewport="true"
+            android:background="@drawable/background_doctorlogin"
+            android:scaleType="centerCrop">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="50000dp"
+            android:layout_height="500dp"
+            android:src="@drawable/logooo"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView3"
+            android:layout_above="@+id/linearLayout"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:id="@+id/linearLayout"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="138dp"
+            android:layout_alignParentLeft="true">
+            <LinearLayout
+                android:id="@+id/loginlinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="33dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/doctorname" />
+                <EditText
+                    android:id="@+id/editusernameloginDr"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textfieldbackground"
+                    android:layout_gravity="center"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="sans-serif"
+                    android:text="testdoctor@test.com"
+                    android:layout_marginLeft="10dp"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="false"
+                    android:textColorHint="#6C6B6C"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loginlinear"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="33dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/lock"
+                    android:layout_gravity="center" />
+
+                <EditText
+                    android:id="@+id/editpasswordloginDr"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/textfieldbackground"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColorHint="#6C6B6C"
+                    android:text="123"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <com.dd.CircularProgressButton
+                android:id="@+id/btnloginDr"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                app:cpb_cornerRadius="48dp"
+                app:cpb_selectorIdle="@xml/circularbtncolor"
+                app:cpb_textError="@string/theloginfailed"
+                app:cpb_textIdle="@string/thelogin"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_marginBottom="11dp">
+
+
+            <TextView
+                android:id="@+id/log_as_patient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login as a patient"
+                android:textColor="#DC1B71"
+                android:layout_marginTop="40dp"
+                android:textSize="15dp"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

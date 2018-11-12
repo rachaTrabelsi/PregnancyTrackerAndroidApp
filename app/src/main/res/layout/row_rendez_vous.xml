@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                >
+
+    <TextView
+        android:id="@+id/date_rendez_vous"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:text="date "
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/name_of_doc_or_pat"
+        android:layout_gravity="bottom|right"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:text="doctor or patient"/>
+</LinearLayout>

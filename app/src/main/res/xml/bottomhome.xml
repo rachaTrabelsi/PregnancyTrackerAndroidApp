@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/homeicon"
+        title="Home"
+        barColorWhenSelected="#FC86C3"/>
+    <tab
+        id="@+id/tab_informations"
+        icon="@drawable/infoiconbar"
+        title="Informations"
+        barColorWhenSelected="#FC86C3"/>
+    <tab
+        id="@+id/tab_nearhospitals"
+        icon="@drawable/neariconbar"
+        title="Near Hospitals"
+        barColorWhenSelected="#FC86C3"/>
+    <tab
+        id="@+id/tab_more"
+        icon="@drawable/more"
+        title="More"
+        barColorWhenSelected="#FC86C3"/>
+
+</tabs>

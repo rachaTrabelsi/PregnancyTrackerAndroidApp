@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.esprit.pregnancytracker.main.EditProfile"
+    android:background="@drawable/backgroundlogin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/img_profil"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/female"/>
+
+                <TextView
+                    android:id="@+id/change_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="130dp"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:background="@drawable/camera"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+
+                    android:background="@drawable/pregnancy"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:fontFamily="casual"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="casual"
+                    android:background="@drawable/girl"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                   android:background="@drawable/key"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                   android:background="@drawable/lock"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/mail"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/calendar"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="casual"
+                    android:background="@drawable/pregnancyweeks"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_weight="0.01"/>
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="29dp"
+                    android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/doctoricon"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="casual"
+                android:textSize="15dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Cancel"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:textSize="15dp"
+                android:background="#EdFF"
+
+                    />
+
+                <EditText
+                    android:id="@+id/edit_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="88dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:textSize="15dp"
+                    android:hint="username"/>
+
+                <EditText
+                    android:id="@+id/namePat_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:textSize="15dp"
+                    android:hint="name"/>
+
+                <EditText
+                    android:id="@+id/password_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="password"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:textSize="15dp"
+                    android:inputType="textPassword"/>
+
+                <EditText
+                    android:id="@+id/confirmPassword_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Confirm your password"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:textSize="15dp"
+                    android:inputType="textPassword"/>
+
+                <EditText
+                    android:id="@+id/email_edit"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Enter your new email"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/newbirthdate_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:focusable="false"
+                    android:hint="new birthdate"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:textSize="15dp"
+                    android:onClick="pickdateAction"/>
+                <EditText
+                    android:id="@+id/nbresemaine_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Weeks of pregnency"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:textSize="15dp"
+                />
+
+
+                <Spinner
+                    android:id="@+id/edit_doctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="20dp"
+
+                    >
+
+                </Spinner>
+
+                <Button
+                    android:id="@+id/btn_submit_editing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:background="#EdFF"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:textSize="15dp"
+                    android:text="Validate"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

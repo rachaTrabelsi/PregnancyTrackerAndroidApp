@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">PregnancyTracker</string>
+    <string name="title_activity_main">PregnancyTrakcer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="loginfailed">Login failed try again !!</string>
+    <string name="loginsuccess">Login success!</string>
+    <string name="login">Login</string>
+    <string name="theloginfailed">Login failed</string>
+    <string name="thelogin">Login</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title">Disclaimer </string>
+    
+    <string name="agree">i agree</string>
+
+    <string name="titlerdv">Hi  </string>
+    <string name="contentrdv">If you want to make an appointement with your patirent , just click on her name  </string>
+    <string name="agreerdv">i get it </string>
+
+
+    <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Updating…</item>
+        <item name="DialogSpotColor">@android:color/holo_blue_light</item>
+        <item name="DialogSpotCount">6</item>
+    </style>
+
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="title_activity_main_doctor">MainDoctorActivity</string>
+    <string name="title_activity_doctor_messaging_container">DoctorMessagingContainer</string>
+</resources>

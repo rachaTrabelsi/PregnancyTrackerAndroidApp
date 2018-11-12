@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              tools:context="com.esprit.pregnancytracker.main.RegisterAcitivty">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/imageuser"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="6dp"
+            android:src="@drawable/female"
+            />
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btncamera"
+            android:background="@drawable/camera"
+            android:layout_marginTop="50dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            style="roun"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/girl" />
+
+        <EditText
+            android:id="@+id/edtfirstname"
+            android:layout_width="150dp"
+            android:layout_height="51dp"
+            android:ems="10"
+            android:hint="firstname"
+            />
+        <EditText
+            android:id="@+id/edtlastname"
+            android:layout_width="150dp"
+            android:layout_height="51dp"
+            android:hint="lastname"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/pregnancy"
+            android:layout_marginRight="10dp"/>
+        <EditText
+            android:id="@+id/edtusername"
+            android:layout_width="290dp"
+            android:layout_height="51dp"
+            android:ems="10"
+            android:hint="username"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="135dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/mail"
+            android:layout_marginRight="10dp"/>
+        <EditText
+            android:id="@+id/edtemail"
+            android:layout_width="290dp"
+            android:layout_height="51dp"
+            android:ems="10"
+            android:hint="e-mail"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="193dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/key"
+            android:layout_marginRight="10dp"/>
+        <EditText
+            android:id="@+id/edtpassword"
+            android:layout_width="290dp"
+            android:layout_height="51dp"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="255dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/lock"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/edtconfirmparssword"
+            android:layout_width="290dp"
+            android:layout_height="51dp"
+            android:ems="10"
+            android:hint="confirm password"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="312dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/calendar"
+            android:layout_marginRight="10dp"/>
+
+
+        <EditText
+            android:id="@+id/edtbirthdate"
+            android:layout_width="290dp"
+            android:layout_height="51dp"
+            android:ems="10"
+            android:hint="date of birth"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="374dp" />
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="#FC5C9C"
+        android:textColor="#ffff"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="431dp"
+        android:layout_marginBottom="20dp"/>
+
+
+
+</LinearLayout>

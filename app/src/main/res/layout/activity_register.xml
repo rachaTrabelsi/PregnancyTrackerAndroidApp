@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundlogin"
+    android:gravity="center"
+    tools:context="com.esprit.pregnancytracker.main.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageuser"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/female"
+                    tools:layout_editor_absoluteX="145dp"
+                    tools:layout_editor_absoluteY="6dp"
+                    />
+
+                <Button
+                    android:id="@+id/btncamera"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/camera"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    style="roun"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    android:src="@drawable/girl"/>
+
+                <EditText
+                    android:id="@+id/edtfirstname"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textfieldbackground"
+                    android:ems="10"
+                    android:hint="name"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/pregnancy"/>
+
+                <EditText
+                    android:id="@+id/edtusername"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textfieldbackground"
+                    android:ems="10"
+                    android:hint="username"
+                    android:inputType="textPersonName"
+                    tools:layout_editor_absoluteX="12dp"
+                    tools:layout_editor_absoluteY="135dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/mail"/>
+
+                <EditText
+                    android:id="@+id/edtemail"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textfieldbackground"
+                    android:ems="10"
+                    android:hint="e-mail"
+                    android:inputType="textPersonName"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="193dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/key"/>
+
+                <EditText
+                    android:id="@+id/edtpassword"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textfieldbackground"
+                    android:ems="10"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    tools:layout_editor_absoluteX="15dp"
+                    tools:layout_editor_absoluteY="255dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/lock"/>
+
+                <EditText
+                    android:id="@+id/edtconfirmparssword"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textfieldbackground"
+                    android:ems="10"
+                    android:hint="confirm password"
+                    android:inputType="textPassword"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="312dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/calendar"/>
+
+                <EditText
+                    android:id="@+id/edtbirthdate"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textfieldbackground"
+                    android:ems="10"
+                    android:hint="date of birth"
+                    android:inputType="textPersonName"
+                    android:focusable="false"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="374dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/pregnancyweeks"/>
+
+                <EditText
+                    android:id="@+id/edtweeks"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textfieldbackground"
+                    android:ems="10"
+                    android:hint="weeks of pregnancy"
+                    android:inputType="number"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="374dp"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnsave"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:background="#FC5C9C"
+                android:text="Register"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="431dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.esprit.pregnancytracker.main.SelfBidouActivity">
+
+    <GridView
+        android:id="@+id/gv_selfbidou"
+
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="10dp"
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        tools:listitem="@layout/single_self"
+      />
+
+</LinearLayout>

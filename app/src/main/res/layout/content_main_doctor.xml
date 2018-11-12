@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.esprit.pregnancytracker.main.MainDoctorActivity"
+    tools:showIn="@layout/app_bar_main_doctor">
+    <ListView
+        android:id="@+id/listNewsForDoctorr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#149584"
+        android:dividerHeight="5dp"
+        tools:listitem="@layout/news_for_doctor_item"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+    </ListView>
+
+</LinearLayout>

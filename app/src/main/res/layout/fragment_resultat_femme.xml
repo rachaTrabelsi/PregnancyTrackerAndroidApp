@@ -1,0 +1,143 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.pregnancytracker.ResultatFemmeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/imclayout"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imcFemme"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="50dp"
+                android:text="aa"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="70dp"
+                android:text="1IMC Ideal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/imcfIdeal"
+                android:layout_height="match_parent"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="70dp"
+                android:text="18,5..24,9"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/waterFemme"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="50dp"
+                android:text="aa"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="70dp"
+                android:text="Water Ideal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="70dp"
+                android:id="@+id/waterfIdeal"
+                android:text="8L"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sleepFemme"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="50dp"
+                android:text="aa"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="70dp"
+                android:text="sleep Ideal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="70dp"
+                android:text="8 hours"
+                android:id="@+id/sleepfIdeal"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cigFemme"
+                    android:layout_marginTop="50dp"
+                    android:text="Smoking during pregnancy can cause a baby to be born too early or to have low birth weight—making it more likely the baby will be sick and have to stay in the hospital longer. A few babies may even die. Smoking during and after pregnancy is a risk factor of Sudden Infant Death Syndrome (SIDS)."
+                    android:layout_gravity="fill_horizontal"
+                    android:textAlignment="center"/>
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cigarette"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/alcoholFemme"
+                    android:layout_marginTop="19dp"
+                    android:text="if you do decide to drink while you're pregnant, limit it to one or two units of alcohol, no more than once or twice a week, and never enough to get drunk. Getting drunk by heavy or binge drinking during your pregnancy can cause serious harm to your baby."
+                    android:layout_gravity="fill_horizontal"
+                    android:textAlignment="center"/>
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/alcoholp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

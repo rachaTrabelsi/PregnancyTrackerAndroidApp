@@ -1,0 +1,184 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/rendezvous"
+             android:background="@drawable/backgroundprofil"
+             tools:context="com.esprit.pregnancytracker.Fragments.ShowDetailRendezVousForPatienteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="com.esprit.pregnancytracker.main.ShowDetailsRendezVous">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    android:fontFamily="casual"
+                    android:text="My Appointement"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="30dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="casual"
+                            android:text="Patient's name :"
+                            android:textColor="#000"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="casual"
+                            android:text="Doctor's name :"
+                            android:textColor="#000"
+
+                            android:textSize="18dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="casual"
+                            android:text="Next Appointement : "
+                            android:textColor="#000"
+                            android:textSize="18dp"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_pat_name_patiente"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="casual"
+                            android:text="Name patient"
+                            android:textColor="#000"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_pat_name_doctor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="casual"
+                            android:text="name doctor"
+                            android:textColor="#000"
+                            android:textSize="18dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/period_last"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="casual"
+                            android:text="Last Appointement : "
+                            android:textColor="#000"
+                            android:textSize="18dp"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="190dp"
+                    android:layout_gravity="bottom|center"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+
+
+
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/btn_reminder_RendezVous"
+                            android:layout_width="70dp"
+                            android:layout_height="78dp"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:src="@drawable/cloche"
+
+
+                            />
+
+
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/btn_add_appointement"
+                        android:layout_width="70dp"
+                        android:layout_height="78dp"
+                        android:src="@drawable/ic_add_appointement"
+                        app:layout_anchor="@id/rendezvous"
+
+
+
+                        />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/btn_show_RendezVous"
+                        android:layout_width="70dp"
+                        android:layout_height="78dp"
+                        android:layout_gravity="right|bottom"
+                        android:src="@drawable/ic_app_rendez_vous"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

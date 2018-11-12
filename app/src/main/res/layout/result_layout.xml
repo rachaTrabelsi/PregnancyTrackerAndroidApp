@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="400dp"
+    android:background="#FFFF"
+    android:padding="5dp"
+    android:layout_gravity="center">
+    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager">
+    </cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager>
+    <com.viewpagerindicator.CirclePageIndicator
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/pageIndicator"
+        android:layout_marginBottom="10dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:id="@+id/homeLayout"
+              android:background="@drawable/hooomebac"
+              tools:context="com.esprit.pregnancytracker.main.HomeActivity"
+              android:weightSum="1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/namepatiente"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Racha trabelsi"
+            android:textColor="#BB0E51"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nbweeks"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="10dp"
+            android:text="4 weeks"
+            android:textAlignment="center"
+            android:textColor="#BB0E51"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="55dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="djfksdf" />
+
+        <TextView
+            android:id="@+id/descweek"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="djfksdf" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/bbimg"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/alcohol" />
+
+        <com.roughike.bottombar.BottomBar
+            android:id="@+id/bottomBarHome"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="420dp"
+            app:bb_tabXmlResource="@xml/bottomhome" />
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/addbtn"
+            android:layout_marginTop="350dp"
+            android:id="@+id/btnadd"
+            android:layout_marginLeft="330dp"/>
+    </FrameLayout>
+</LinearLayout>
+        </ScrollView>
+</LinearLayout>

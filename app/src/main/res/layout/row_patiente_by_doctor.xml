@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/background" >
+    <ImageView
+        android:id="@+id/imgpatDoct"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/female"
+       />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
+
+
+    <TextView
+        android:id="@+id/tv_doc_name_patiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft ="@dimen/text_margin"
+        android:text="eeeeeee"
+        android:textSize="14dp"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/tv_doc_email_patiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft ="@dimen/text_margin"
+        android:text="rrrrrrrrrr"
+        android:textSize="14dp"
+        android:textAppearance="?attr/textAppearanceListItem" />
+</LinearLayout>
+</LinearLayout>
+
